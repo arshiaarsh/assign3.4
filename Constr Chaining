@@ -1,0 +1,24 @@
+public class Chain
+   {
+     public Chain(){
+         System.out.println("Default constructor");
+   }
+   public Chain(String str)
+   {
+         this();
+    	 System.out.println("Parametrized constructor with single args");
+   }
+   public Chain(String str, int num)
+   {
+         this("Hello"); 
+    	 System.out.println("Parametrized constructor with double args");
+   }
+   public Chain(int num1, int num2, int num3)
+   {
+   	    this("Hello", 2);
+        System.out.println("Parametrized constructor with three args");
+   }
+   public static void main(String args[]){
+       Chain obj = new Chain(5,5,15);
+   }
+}
